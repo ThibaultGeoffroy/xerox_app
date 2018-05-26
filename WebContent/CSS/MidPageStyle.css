@@ -1,0 +1,393 @@
+/*
+div.titlepane
+{
+	font-family:arial;
+	font-size:18px;
+	color:White;
+	position:absolute;
+	top:5;
+	left:5;
+	height:40;
+	width:790;
+	z-index:50;
+}
+div.titlepanesecond
+{
+	font-family:arial;
+	font-size:18px;
+	color:White;
+	position:absolute;
+	top:50;
+	left:5;
+	height:40;
+	width:790;
+	z-index:50;
+}
+
+
+
+div.leftpane
+{
+	font-family:arial;
+	font-size:10pt;
+	position:absolute;
+	top:55;
+	left:0;
+	width:400;
+	height:286;
+	z-index:40;
+}
+
+div.rightpane
+{
+	font-family:arial;
+	font-size:10pt;
+	position:absolute;
+	top:55;
+	left:400;
+	width:400;
+	height:286;
+	z-index:40;
+}
+
+div.CancelButton
+{
+	position:absolute;
+	font-size:18px;
+	left:465px;
+	top:3px
+}
+
+div.NextButton
+{
+	position:absolute;
+	font-size:18px;
+	left:570px;
+	top:3px
+}
+
+div.ExitButton
+{
+	position:absolute;
+	font-size:18px;
+	left:665px;
+	top:3px
+}
+*/
+div.fullpane, div.formDesign.fourthPage
+{
+	font-family:arial;
+	font-size:10pt;
+	position:absolute;
+	top:25px;
+	left:0;
+	width:800px;
+	height:286px;
+	z-index:40;
+}
+div.fullpane.secondPage
+ {
+	position:relative;
+	top:20px;
+}
+div.DestinationLabelsecond
+{
+	position:absolute;
+	left:10px;
+	width:200px;
+	top:30px
+}
+
+div.DestinationLabel
+{
+	position:absolute;
+	left:10px;
+	top:-20px
+}
+div.DestinationSelections
+{
+	position:absolute;
+	left:10px;
+	top:10px;
+}
+div.DestinationSelectionssecond
+{
+	position:absolute;
+	left:10px;
+	top:60px;
+}
+
+div.DocumentTypeLabel
+{
+	position:absolute;
+	left:290px;
+	top:-20px
+}
+
+div.DocumentTypeSelections
+{
+	position:absolute;
+	left:290px;
+	top:10px;
+}
+div.DocumentTypeLabelsecond
+{
+	position:absolute;
+	left:290px;
+	width:200px;
+	top:30px
+}
+
+div.DocumentTypeSelectionssecond
+{
+	position:absolute;
+	left:290px;
+	top:60px;
+}
+
+div.ColorOptionsLabel
+{
+	position:absolute;
+	left:600px;
+	top:-20px
+}
+
+div.ColorOptionsSelections
+{
+	position:absolute;
+	left:600px;
+	top:10px;
+}
+div.ColorOptionsLabelsecond
+{
+	position:absolute;
+	left:600px;
+	width:200px;
+	top:30px
+}
+
+div.ColorOptionsSelectionssecond
+{
+	position:absolute;
+	left:600px;
+	top:60px;
+}
+div.OrientationLabel
+{
+	position:absolute;
+	left:10px;
+	top:140px
+}
+
+div.OrientationSelections
+{
+	position:absolute;
+	left:10px;
+	top:170px;
+}
+
+div.OrientationLabelsecond
+{
+	position:absolute;
+	left:10px;
+	width:200px;
+	top:200px
+}
+
+div.OrientationSelectionssecond
+{
+	position:absolute;
+	left:10px;
+	top:230px;
+}
+div.PageSidesLabel
+{
+	position:absolute;
+	left:290px;
+	top:140px
+}
+
+div.PageSidesSelections
+{
+	position:absolute;
+	left:290px;
+	top:170px;
+}
+div.PageSidesLabelsecond
+{
+	position:absolute;
+	left:290px;
+	width:250px;
+	top:200px
+}
+
+div.PageSidesSelectionssecond
+{
+	position:absolute;
+	left:290px;
+	top:230px;
+}
+
+div.PrintOptionsLabel
+{
+	position:absolute;
+	left:600px;
+	top:140px
+}
+
+div.PrintOptionsSelections
+{
+	position:absolute;
+	left:600px;
+	top:170px;
+}
+div.PrintOptionsLabelsecond
+{
+	position:absolute;
+	left:600px;
+	width:200px;
+	top:200px
+}
+
+div.PrintOptionsSelectionssecond
+{
+	position:absolute;
+	left:600px;
+	top:230px;
+}
+
+div.WaitGraphic
+{
+	position:absolute;
+	left:385px;
+	top:100px;
+}
+
+div.docNameLabel
+{
+	position:absolute;
+	left:5px;
+	top:100px
+}
+
+div.docNameBox
+{
+	position:absolute;
+	left:270px;
+	top:97px
+}
+
+div.DemoLabel
+{
+	position:absolute;
+	left:10px;
+	font-size:16px;
+	font-weight:bold
+}
+
+div.DemoBox
+{
+	position:absolute;
+	font-size:16px;
+	font-weight:bold;
+	left:250px;
+	width:540px;
+	height:40px
+}
+/*
+div.UsernameLabel
+{
+	top:20px;
+}
+
+div.DeviceModelLabel
+{
+	top:60px;
+}
+
+div.ColorTypeLabel
+{
+	top:100px;
+}
+
+div.BrowserUserAgentLabel
+{
+	top:140px;
+}
+
+div.BrowserVersionLabel
+{
+	top:180px;
+}
+
+div.XeroxWidgetsVersionLabel
+{
+	top:220px;
+}
+
+div.UsernameBox
+{
+	top:20px;
+}
+
+div.DeviceModelBox
+{
+	top:60px;
+}
+
+div.ColorTypeBox
+{
+	top:100px;
+}
+
+div.BrowserUserAgentBox
+{
+	top:140px;
+}
+
+div.BrowserVersionBox
+{
+	top:180px;
+}
+
+div.XeroxWidgetsVersionBox
+{
+	top:220px;
+}
+*/
+
+.formDesign label, .formDesign input 
+{
+	float:left;	
+}
+.formDesign label
+{
+	width:150px;
+	padding-top:10px;
+
+}
+.formDesign input[type=text],.formDesign input[type=password] 
+{
+	width:300px;
+}
+.formDesign div 
+{
+	clear:both;
+}
+/*
+div.Protocolsection
+{
+	position:absolute;
+	left:30px;
+	top:100px;
+	width:200px;
+	
+} */
+
+
+.firstpage .box {
+	padding-bottom:10px;
+}
+.topSpace { margin-top:10px;}
+.clear { clear:both; }
+.btmSpace { padding-bottom:40px; }

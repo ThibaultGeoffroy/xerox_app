@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project basedir="." default="build-war">
+	<!--Auto generated ant build file -->
+	<property environment="env" />
+	<property name="axis2.home" value="${env.AXIS2_HOME}" />
+	<property name="tomcat.home" value="${env.CATALINA_HOME}" />
+
+	<property name="project.base.dir" value="." />
+	<property name="maven.class.path" value="" />
+	<property name="name" value="JobManagementService" />
+	<property name="src" value="${project.base.dir}/src" />
+	<property name="test" value="${project.base.dir}/test" />
+
+	<property name="build" value="${project.base.dir}/build" />
+	<property name="classes" value="${build}/classes" />
+	<property name="lib" value="${build}/lib" />
+	<property name="web" value="${project.base.dir}/WebContent" />
+	<property name="resources" value="${project.base.dir}/resources" />
+
+<echo> ${env.CATALINA_HOME}</echo>
+
+	<target name="init" depends="clean">
+		<mkdir dir="${build}" />
+		<mkdir dir="${classes}" />
+		<mkdir dir="${lib}" />
+	</target>
+	<target name="clean">
+		<delete includeemptydirs="true" failonerror="false">
+			<fileset dir="${build}" includes="**/*" />
+		</delete>
+
+		<delete file="../Executables/DemoApp/DemoApplication.war" />
+	</target>
+
+	<target name="compile.src" depends="init">
+		<javac fork="true" memoryInitialSize="256m" memoryMaximumSize="256m" includeantruntime="true"
+			 debug="on" destdir="${classes}" srcdir="${src}">
+			<classpath>
+				<fileset dir='${project.base.dir}/WebContent/WEB-INF/lib'
+					includes='*.jar' />
+				<fileset dir='${tomcat.home}' includes='lib/*.jar' />
+			</classpath>
+
+
+		</javac>
+	</target>
+
+	<target name="build-war" depends="compile.src">
+		<war destfile="../Executables/DemoApp/DemoApplication.war" webxml="${web}/WEB-INF/web.xml">
+			<fileset dir="${web}">
+				<include name="**/*.*" />
+			</fileset>
+			<lib dir="${lib}">
+				<include name="lib/*.jar" />
+			</lib>
+			<classes dir="${classes}">
+				<include name="**/*.*" />
+			</classes>
+		</war>
+	</target>
+
+
+
+
+
+</project>
